@@ -3,7 +3,31 @@ from Post import Post
 
 all_posts_archive = []
 
-# your code here
+# your code 
 
-post1 = Post("Marie", "This is my first post!")
-print(post1)
+
+username = input("What is your username?")
+
+print("Hello,", username)
+
+print("Options: new, remove")
+
+user_input = input("What would you like to do? ")
+
+while (user_input != "quit"):
+  if(user_input == "new"):
+    message = input("What's on your mind? ")
+    new_post = Post(username, message)
+    all_posts_archive.append(new_post)
+    print("Success! Your post has been uploaded.")
+    print(all_posts_archive)
+  
+
+  elif (user_input == "remove"):
+    index = input("Which post would you like to remove? ")
+    if(index > len(all_post_archive - 1):
+      print(T)
+    del all_posts_archive[int(index)]
+    print(all_posts_archive)
+    
+  user_input = input("What would you like to do? ")
